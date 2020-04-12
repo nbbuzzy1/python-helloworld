@@ -1,7 +1,4 @@
-name = 'John Smith'
-age = 20
-isNew = True
+weight_in_pounds = input('Weight (lbs): ')
+weight_in_kilograms = int(weight_in_pounds) * .453592
 
-name = input('What is your name? ')
-color = input('What is your favorite color ')
-print('Hi ' + name + ' your favorite color is ' + color)
+print('You weigh ' + str(weight_in_kilograms) + " kilograms")
