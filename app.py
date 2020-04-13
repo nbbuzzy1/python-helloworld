@@ -1,4 +1,8 @@
-weight_in_pounds = input('Weight (lbs): ')
-weight_in_kilograms = int(weight_in_pounds) * .453592
+name = 'Jennifer'
+msg = f'{name} is a coder'
+print(msg)
 
-print('You weigh ' + str(weight_in_kilograms) + " kilograms")
+course = 'Python for Beginners'
+print(len(course))
+upper_course = course.upper()
+print(upper_course)
