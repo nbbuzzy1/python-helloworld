@@ -1,13 +1,15 @@
-is_hot = False
-is_cold = True
+has_high_income = False
+has_good_credit = True
+has_criminal_record = False
 
-if is_hot:
-    print("It's a hot day")
-elif is_cold:
-    print("It's a cold day")
-else:
-    print("It's a nice day")
+if has_high_income and has_good_credit:
+    print('Eligible for loan')
 
+if has_high_income or has_good_credit:
+    print('Eligible for loan')
+
+if has_good_credit and not has_criminal_record:
+    print('Elgible for loan')
 
 
 
