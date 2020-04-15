@@ -1,11 +1,12 @@
-import math
+is_hot = False
+is_cold = True
 
-print(math.ceil(2.9)) #3
-print(math.floor(2.9)) #2
-
-x = 2.4
-print(round(x)) #2
-print(abs(-2.9)) #2.9
+if is_hot:
+    print("It's a hot day")
+elif is_cold:
+    print("It's a cold day")
+else:
+    print("It's a nice day")
 
 
 
