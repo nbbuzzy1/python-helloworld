@@ -1,15 +1,11 @@
-has_high_income = False
-has_good_credit = True
-has_criminal_record = False
+name = input('What is your name ')
+if len(name) < 3:
+    print('Name must be at least 3 characters')
+elif len(name) > 50:
+    print('Name can be a maximum of 50 characters')
+else:
+    print('Name looks good')
 
-if has_high_income and has_good_credit:
-    print('Eligible for loan')
-
-if has_high_income or has_good_credit:
-    print('Eligible for loan')
-
-if has_good_credit and not has_criminal_record:
-    print('Elgible for loan')
 
 
 
