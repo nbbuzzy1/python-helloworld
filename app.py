@@ -1,10 +1,17 @@
-name = input('What is your name ')
-if len(name) < 3:
-    print('Name must be at least 3 characters')
-elif len(name) > 50:
-    print('Name can be a maximum of 50 characters')
+secret_number = 9
+guess_count = 0
+guess_limit = 3
+
+while guess_count < guess_limit:
+    guess = int(input('Guess a number '))
+    guess_count += 1
+    if guess == secret_number:
+        print('You won!')
+        break
 else:
-    print('Name looks good')
+    print('You lost!')
+
+
 
 
 
