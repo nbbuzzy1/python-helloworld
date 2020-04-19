@@ -1,15 +1,20 @@
-secret_number = 9
-guess_count = 0
-guess_limit = 3
+user_input = ''
 
-while guess_count < guess_limit:
-    guess = int(input('Guess a number '))
-    guess_count += 1
-    if guess == secret_number:
-        print('You won!')
+while user_input != 'quit':
+    user_input = input("> ").lower()
+    if user_input == 'help':
+        print('start - to start the car')
+        print('stop - to stop the car')
+        print('quit - to exit')
+    elif user_input == 'start':
+        print('Car started...Ready to go!')
+    elif user_input == 'stop':
+        print('Car stopped.')
+    else:
+        print('Did not recognize that command.')
+    if user_input == 'quit':
         break
-else:
-    print('You lost!')
+
 
 
 
