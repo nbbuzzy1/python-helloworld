@@ -1,15 +1,11 @@
-cost = 0
-prices = [10, 20, 30]
+numbers = [1, 2, 3, 4, 5, 6, 2, 20, 3]
+largest_number = numbers[0]
 
-for price in prices:
-    cost += price
+for num in numbers:
+    if num > largest_number:
+        largest_number = num
 
-print(f"Total: {cost}")
-
-for x in range(4):
-    for y in range(3):
-        print(f"({x}, {y})")
-
+print(largest_number)
 
 
 
