@@ -1,28 +1,11 @@
-numbers = [5, 2, 1, 7, 4]
-numbers2 = numbers.copy()
-numbers.append(20)
-print(numbers)
+numbers = [5, 2, 1, 7, 4, 7]
+uniques = []
 
-numbers.insert(0, 10)
-print(numbers)
+for number in numbers:
+    if number not in uniques:
+        uniques.append(number)
 
-numbers.remove(5)
-print(numbers)
-
-numbers.pop()
-print(numbers)
-
-print(numbers.index(7))  # or use 7 in numbers
-
-print(numbers.count(1))
-
-numbers.sort()
-numbers.reverse()
-print(numbers)
-
-numbers.clear()
-print(numbers)
-print(numbers2)
+print(uniques)
 
 
 
