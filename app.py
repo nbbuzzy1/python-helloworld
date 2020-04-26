@@ -1,10 +1,18 @@
-def square(number):
-    return number * number
+message = input('> ')
 
 
-squared_number = square(3)
+def emoji_converter(phrase):
+    words = phrase.split(' ')
+    emojis = {
+        ':)': '😊',
+        ':(': '😢'
+    }
+    output = ''
+    for word in words:
+        output += emojis.get(word, word) + " "
 
-print(squared_number)
+    return output
 
-print(square(3))
+
+print(emoji_converter(message))
 
