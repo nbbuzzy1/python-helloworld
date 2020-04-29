@@ -1,29 +1,21 @@
-class Point:
-    def __init__(self, x, y):
-        self.x = x
-        self.y = y
-
-    def move(self):
-        print('move')
-
-    def draw(self):
-        print('draw')
+class Mammal:
+    def walk(self):
+        print('walk')
 
 
-point1 = Point(5, 10)
-print(point1.x)
+class Dog(Mammal):
+    def bark(self):
+        print('bark')
 
 
-class Person:
-    def __init__(self, name):
-        self.name = name
-
-    def talk(self):
-        print(f'hi I am {self.name}')
+class Cat(Mammal):
+    def be_annoying(self):
+        print('annoying')
 
 
-john = Person('John Smith')
-john.talk()
+dog1 = Dog()
+dog1.walk()
+dog1.bark()
 
-bob = Person('Bob Smith')
-bob.talk()
+cat = Cat()
+cat.be_annoying()
