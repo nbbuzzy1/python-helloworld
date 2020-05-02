@@ -1,6 +1,5 @@
-import converters
-from converters import kg_to_lbs
+from utils import find_max
+max = find_max([1, 2, 4, 20])
 
-print(kg_to_lbs(100))
+print(max)
 
-print(converters.kg_to_lbs(70))
